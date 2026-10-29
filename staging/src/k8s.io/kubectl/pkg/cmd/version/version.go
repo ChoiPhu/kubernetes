@@ -142,7 +142,7 @@ func (o *Options) Run() error {
 
 	switch o.Output {
 	case "":
-		fmt.Fprintf(o.Out, "Client Version: %s\n", versionInfo.ClientVersion.GitVersion)
+		fmt.Fprintf(o.Out, "Phu's Local Client Version: %s\n", versionInfo.ClientVersion.GitVersion)
 		fmt.Fprintf(o.Out, "Kustomize Version: %s\n", versionInfo.KustomizeVersion)
 		if versionInfo.ServerVersion != nil {
 			fmt.Fprintf(o.Out, "Server Version: %s\n", versionInfo.ServerVersion.GitVersion)
